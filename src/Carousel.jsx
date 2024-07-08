@@ -9,7 +9,9 @@ class Carousel extends Component {
   handleIndexClick = (e) => {
     this.setState({
       active: +e.target.dataset.index,
+      
     });
+    console.log(e);
   };
   render() {
     const { active } = this.state;
